@@ -82,10 +82,17 @@ color: var(--title-color);
 }
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
+.home__container{
 
-}
+    }
+
+} */
 
  /* For small devices */
 @media screen and (max-width: 350px) {
+    .home__img{
+        width: 180px;
+        height: 180;
+    }
 }
