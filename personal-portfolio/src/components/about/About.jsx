@@ -19,7 +19,7 @@ const About = () => {
 
    <p className="about__description">
      I am a web developer. I create web pages and functional applications with UI/UX user interfaces.
-     <br>I am happy with my projects so far.</br>
+     With 2 years of experience,I am happy with my projects so far.
    </p>
 
   </div>
