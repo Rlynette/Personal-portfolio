@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./contact.css";
 
 const Contact = () => {
   return (
@@ -18,7 +19,7 @@ const Contact = () => {
                     <h3 className="contact__card-title">Email</h3>
                     <span className="contact__card-data">user@gmail.com</span>
 
-                    <a href="mailto:examplemail@gmail.com.com"
+                    <a href="mailto:koko.ronnoh@gmail.com"
                      className="contact__button">Write me{" "}
                     <i className="bx bx-right-arrow-alt 
                        contact__button-icon"></i></a>
@@ -32,20 +33,20 @@ const Contact = () => {
                     <span className="contact__card-data">999-888-777</span>
 
                     <a href="https://api.whatsapp.com/send?
-                    phone=62214408789&text=Hello, more information!"
+                    phone=254740359539&text=Hello, more information!"
                      className="contact__button">Write me {" "}
                     <i className="bx bx-right-arrow-alt 
                        contact__button-icon"></i></a>
                 </div>
 
                 <div className="contact__card">
-                    <i className="bx bxl-messenger contact__card-icon"></i>
+                    <i className="bx bxl-twitter contact__card-icon"></i>
 
 
-                    <h3 className="contact__card-title">Messenger</h3>
-                    <span className="contact__card-data">user.fb123</span>
+                    <h3 className="contact__card-title">Twitter</h3>
+                    <span className="contact__card-data">user.twitter123</span>
 
-                    <a href="https://m.me/crypticalcoder"
+                    <a href="https://twitter.com/RonnohLynette"
                     className="contact__button">Write me{" "}
                     <i className="bx bx-right-arrow-alt 
                        contact__button-icon"></i></a>
@@ -78,7 +79,7 @@ const Contact = () => {
                   />
             </div>
 
-            <div className="contact__form-div">
+            <div className="contact__form-div contact__form-area">
                 <label className="contact__form-tag">Project</label>
               <textarea 
                  name="project" 
