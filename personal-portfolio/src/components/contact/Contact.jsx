@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 
@@ -13,7 +13,7 @@ const Contact = () => {
         "service_tgo8os6", 
          "template_oaesrcu", 
          form.current, 
-         'YOUR_PUBLIC_KEY'
+         "XWvNEjAz_0H7M-1qC"
          )
         .then(
             (result) => {
@@ -23,6 +23,7 @@ const Contact = () => {
           console.log(error.text);
       }
       );
+      // e.target.reset()
   };
 
   return (
