@@ -1,7 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 const Contact = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+    .sendForm(
+        "service_tgo8os6", 
+         "template_oaesrcu", 
+         form.current, 
+         'YOUR_PUBLIC_KEY'
+         )
+        .then(
+            (result) => {
+          console.log(result.text);
+      }, 
+        (error) => {
+          console.log(error.text);
+      }
+      );
+  };
+
   return (
    <section className="contact section" id="contact">
      <h1 className="section__title">Get In Touch</h1>
@@ -58,7 +81,8 @@ const Contact = () => {
         <div className="contact__content">
             <h3 className="contact__title">Write Me Project Details</h3>
 
-            <form className="contact__form">
+            <form  ref={form} onSubmit={sendEmail}
+            className="contact__form">
             <div className="contact__form-div">
                 <label className="contact__form-tag">Name</label>
                 <input 
